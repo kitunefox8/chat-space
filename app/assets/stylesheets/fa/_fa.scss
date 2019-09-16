@@ -1,0 +1,21 @@
+
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa-edit:before, .fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+.fa-gear:before, .fa-cog:before {
+  content: "\f013";
+}
+
+.fa-image:before, .fa-picture-o:before {
+  content: "\f03e";
+}
