@@ -10,12 +10,13 @@
     justify-content: space-between;
     width: 100%;
     font-weight: bold;
+    font-size: 16px;
     &__menu {
-      display: flex
-
+      display: flex;
+      
       & li{
         margin-left: 0.3rem;
-      
+        
       }
     }
     

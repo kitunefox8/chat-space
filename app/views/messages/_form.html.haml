@@ -1,0 +1,19 @@
+-# .form
+-#   %form#new_message.new_message{action: "", enctype: "maltipart/form-data"}
+-#     %input{name: "utf8", type: "hidden", value: "✔︎"}/
+-#     %input{name: "authenticity_token", type: "hidden", value: "tEXKvMDBh02EVQApBYD63DINkX38PJqT0TdeU3C9IhNAI5KlcEJKpIg1M8osyGhyqZaMaKMmhSUGCOx7eHj4FA=="}/
+-#     .input-box
+-#       %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+-#       %label.input-box__image{for: "message_image"}
+-#         = fa_icon("image")
+-#         %input#message_image.input-box__image__file{name: "message[image]", type: "file"}/
+-#     %input.submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}/
+
+.form
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, id: 'new_message', class: 'new_message', placeholder: 'type a message'
+    .input-box
+      = f.label :image, class: 'input-box__image' do
+        = fa_icon 'picture-o', class: 'icon'
+        = f.file_field :image, class: 'input-box__image__hidden'
+    = f.submit 'Send', class: 'submit-btn'

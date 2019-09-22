@@ -1,18 +1,38 @@
 
-.groups {
-  height: calc(100vh - 100px);
-  background-color: #2f3e51;
-  padding: 20px 20px 0;
-  overflow: scroll;
-}
+// .groups {
+//   height: calc(100vh - 100px);
+//   background-color: #2f3e51;
+//   padding: 20px 20px 0;
+//   overflow: scroll;
+// }
 
-.group {
-  margin-bottom: 40px;
-  &__group-name{
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-  &__group__latest-message {
-    font-size: 11px;
+// .group {
+//   margin-bottom: 40px;
+//   &__group-name{
+//     font-size: 15px;
+//     margin-bottom: 5px;
+//   }
+//   &__group__latest-message {
+//     font-size: 11px;
+//   }
+// }
+
+
+.groups {
+  background-color: $side_blue_light;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  .group {
+    box-sizing: border-box;
+    padding: 20px 0 40px;
+    &__name {
+      color: $white;
+      font-size: $side_group_name;
+    }
+    &__message {
+      color: $white;
+      font-size: $side_group_message;
+      margin-top: 5px;
+    }
   }
 }

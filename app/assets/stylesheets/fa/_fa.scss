@@ -8,14 +8,18 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.fa-edit:before, .fa-pencil-square-o:before {
-  content: "\f044";
-}
+// .fa-edit:before, .fa-pencil-square-o:before {
+//   content: "\f044";
+// }
 
-.fa-gear:before, .fa-cog:before {
-  content: "\f013";
-}
+// .fa-gear:before, .fa-cog:before {
+//   content: "\f013";
+// }
 
-.fa-image:before, .fa-picture-o:before {
-  content: "\f03e";
+// .fa-image:before, .fa-picture-o:before {
+//   content: "\f03e";
+// }
+
+.icon{
+  font-size: 20px;
 }
