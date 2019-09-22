@@ -1,0 +1,8 @@
+.wrapper  
+  = render 'chatspace/sidebar'
+  .chat-main
+    = render 'messages/mainheader'
+    .messages
+      = render @messages
+    -# = render 'chatspace/messages'
+    = render 'messages/form'

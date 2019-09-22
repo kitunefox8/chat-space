@@ -1,0 +1,17 @@
+.main-header
+
+  .main-header__left-box
+    
+    %h2.main-header__left-box__current-group{"data-group_id": ""}
+      = @group.name
+    %ul.main-header__left-box__menber-list
+      = current_user.name
+
+
+  = link_to new_group_path do
+    %button.main-header__edit-btn Edit
+
+
+
+-# ,class: "main-header__edit-btn" 
+-# - current_user.groups.each do |group|
