@@ -30,10 +30,10 @@ $(function(){
   }
   $('#new_message').on('submit', function(e){
     e.preventDefault();
-    // console.log(this);
+    
     var formData = new FormData(this);
     var url = $(this).attr('action');
-    // debugger;
+    
     
     $.ajax({
       url: url,
@@ -46,7 +46,7 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html)
-      $('.new_message').val('')
+      $('.new_message')[0].reset();
       scrollBottom();
     })
     .fail(function(){
@@ -58,6 +58,3 @@ $(function(){
   })
 });
 
-// == null) {.append(`</img>`)}
-// else html = $(html).append(`<img class="lower-message__image" src=`+ message.image.url +`>`)
-// {/* <img class="lower-message__image" src= ${message.image} ></img> */}
