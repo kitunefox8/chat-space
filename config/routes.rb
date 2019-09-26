@@ -4,7 +4,10 @@ Rails.application.routes.draw do
 
   # root  'chatspace#index'
   root 'groups#index'
-  resources :users, only: [:index, :edit, :update]
+  # root 'users#index'
+  get 'groups' => 'groups#index'
+
+  resources :users, only: [:index, :edit, :update] 
   resources :groups, only: [:new, :create, :edit, :update] do
     resources :messages, only: [:index, :create]
   
@@ -13,6 +16,7 @@ Rails.application.routes.draw do
 
   
   # get     'chatspace'       => 'chatspace#index'
+    
   end
 end
 
