@@ -21,11 +21,9 @@
         %input#user-search-field-list.chat-group-form__input{:placeholder => "追加したいユーザー名を入力してください", :type => "text"}    
       #user-search-result
       
-
   .chat-group-form__field.clearfix
     .chat-group-form__field--left
       = f.label "チャットメンバー", class: "chat-group-form__label"
-
     
     .chat-group-form__field--right
       #chat-group-users.js-add-user
@@ -35,8 +33,6 @@
             %p.chat-group-user__name
               = user.name
             %p.user-search-remove.chat-group-user__btn.chat-group-user__btn--remove.js-remove-btn 削除
-
-
    
     #member_search_result
   .chat-group-form__field.clearfix
