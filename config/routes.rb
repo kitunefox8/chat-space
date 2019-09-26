@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   
   devise_for :users
 
-  # root  'chatspace#index'
+  
   root 'groups#index'
-  # root 'users#index'
+  
   get 'groups' => 'groups#index'
 
   resources :users, only: [:index, :edit, :update] 
@@ -12,10 +12,7 @@ Rails.application.routes.draw do
     resources :messages, only: [:index, :create]
   
   
-  # resources :users, only: [:edit, :update]
-
   
-  # get     'chatspace'       => 'chatspace#index'
     
   end
 end

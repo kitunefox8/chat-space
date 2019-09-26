@@ -24,14 +24,7 @@ class GroupsController < ApplicationController
   end
 
 
-  # def edit
-  #   @group = Group.new
-  #   # @group.name = Group.(:name)
-  #   @group.users << current_user
-    
-
-  # end
-
+ 
 
   def update
     if @group.update(group_params)

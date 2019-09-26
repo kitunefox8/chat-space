@@ -75,11 +75,11 @@
 
 
       
-      $.ajax({ //ajax通信で以下のことを行います
-        url: '/users', //urlを指定
-        type: 'GET', //メソッドを指定
-        data: {keyword: input}, //コントローラーに渡すデータを'keyword=input(入力された文字のことですね)'にするように指定
-        dataType: 'json' //データ形式を指定
+      $.ajax({ 
+        url: '/users', 
+        type: 'GET', 
+        data: {keyword: input}, 
+        dataType: 'json'
         })
         
 
@@ -110,7 +110,7 @@ $(function(){
     e.preventDefault();
     $('#users').remove("");
     
-    // $(document).off('click', '.user-search-add');
+    
 
     
     
@@ -123,8 +123,7 @@ $(function(){
 })
 });
 
-  // .always(function(){
-  //   $('.user-search-add').prop('disabled', false);
+ 
 
   $(function(){  
     $(document).on('click', '.user-search-remove', function(){
@@ -144,58 +143,3 @@ $(function(){
 
 
  
-//  $(function(){
-
-//   function buildHTML(user){
-     
-//       var html =   `<div class="chat-group-user__name">
-//                       ${user.name}
-//                     </div>`
-                      
-//       return html;
-//     }
-
-
-
-//   $(document).on('click', '.user-search-add', function(e){
-//     e.preventDefault();
-    
-//     var formData = new FormData(this);
-//     var url = $(this).attr('action');
-    
-
-//       $.ajax({
-//         url: url,
-//         type: "POST",
-//         data: formData,
-//         dataType: 'json'
-       
-//         })
-      
-//       .done(function(data){
-        
-//         var html = buildHTML(data);
-//         $('.chat-group-user__name').append(html)
-//         // $('.new_message')[0].reset();
-        
-      
-//       })
-//     });
-//  });
-     
-
-//   // console.log(this);
-
-//   // debugger;
-
-
-
-
-//   $(document).on('click', '.user-search-add', function(e){
-//     e.preventDefault();
-    
-//     var formData = new FormData(this);
-//     var url = $(this).attr('action');
-
-
-// });
