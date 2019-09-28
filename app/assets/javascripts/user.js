@@ -49,7 +49,7 @@ $(function(){
             });
           }
           else {
-            appendErrMsgToHTML("一致する映画はありません");
+            appendErrMsgToHTML("一致する人はいません");
           }          
         })      
         .fail(function() {
