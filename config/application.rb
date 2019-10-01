@@ -14,6 +14,11 @@ module ChatSpace
       g.javascripts false
       g.helper false
       g.test_framework false
-    end
+    end    
+  end
+end
+module Myapp
+  class Application < Rails::Application
+    config.time_zone = 'Tokyo'
   end
 end
